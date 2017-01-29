@@ -1,7 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html <html lang="en">
+<head>
+<style>
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    background-color: ;
+}
+.flex-container-vert {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    background-color: ;
+}
+
+.flex-item {
+  margin:10px;
+  margin-right:50px;
+  background-color: ;
+}
+.flex-item-body {
+  margin:10px;
+  margin-right:130px;
+  background-color: ;
+}
+h1 {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+}
+h2 {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+h4 {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+  line-height: 15.4px;
+}
+p {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+  line-height: 20px;
+}
+.verticalLine {
+  border-top : 2px solid;
+  margin-right:10px;
+}
+
+</style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<div class = "flex">
+  <div class="flex-container">
+    <div class="flex-item">
+    	<div class="flex-container-vert">
+    		<div class="flex-item">
+    			<img src="Elena_profile.jpg" alt ="An image of me" style="float:left;width:250px;height:250px;">
+    		</div>
+    		<div class="flex-item">
+    			<h2 >Contact Information</h2>
+          <div class="verticalLine">
+            <p>IMDEA Software Institute<br/>
+               Office 342<br/>
+               Campus de Montegancedo s/n<br/>
+               28223 - Pozuelo de Alarcón<br/>
+               Madrid, Spain<br/>
+               elena.gutierrez@imdea.org</p>
+          </div>     
+    		</div>
+    	</div>
+    </div>
+
+    <div class="flex-item-body">
+      <h1>Elena Gutiérrez</h1>
+      <h4>PhD. student</h4>
+
+      
+      <h2>About me</h2>
+      <div class="verticalLine">
+        <p> I am a PhD. student at the IMDEA Software Institute under the supervision of <a href="http://software.imdea.org/~pierreganty/index.html">Pierre Ganty</a>. I am currently working on Automata Theory and Formal Languages in the field of Program Verification.</p>
+        <p>I have studied a Double Degree on Mathematics and Computer Science at the UAM University from 2011 to 2016. Highly interested in starting my professional career, I completed a summer internship at IMDEA Software Institute in 2013. As a first step in research I really enjoyed it, so I repeated the experience during the summer of 2014 and 2015. Once I finished my Double Degree I decided to start a PhD.</p>
+        <p>You can find further information about me in my <a href="ElenaCV_25012017.pdf">CV</a>.</p>
+      </div>
+
+      <h2>Research</h2>
+      <div class="verticalLine">
+        <p>During the summer internships at IMDEA, I worked on the Linearisation of Horn clauses. As a result of this work, I presented my final degree project on this topic under the title 'Linearisation of k-index bounded sets of Horn clauses'. This project includes the implementation of a procedure in Prolog that transforms a set of non-linear Horn clauses into linear preserving the models. The procedure is available in a public repository in Github.</p>
+
+        <h4>Thesis</h4>
+        <p>&#9642; E. Gutiérrez. <i>Linearisation of k-index bounded sets of Horn clauses</i>. Double Degree on Mathematics and Computer Science thesis, Universidad Autónoma de Madrid, May 2016. [<a href="tfg_ElenaGutierrezViedma.pdf">PDF</a>]</p>
+
+        <h4>Software</h4>
+        <p>&#9642; <i>ELP</i>. A linearisation procedure for index-bounded sets of Horn clauses.[<a href="https://github.com/elenagutiv/Linearisation-2015">Github Project Page</a>]</p>
+      </div>
+      <div class="verticalLine"></div>
+    </div>
+    
+  </div>
+</div>
+
 </body>
 </html>
