@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html <html lang="en">
 <head>
+
 <style>
 .flex-container {
     display: -webkit-flex;
@@ -18,6 +19,7 @@
 .flex-item {
   margin:10px;
   margin-right:50px;
+  width: 250px;
   background-color: ;
 }
 .flex-item-body {
@@ -26,7 +28,7 @@
   background-color: ;
 }
 h1 {
-  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
   font-size: 36px;
   font-style: normal;
   font-variant: normal;
@@ -34,7 +36,7 @@ h1 {
   line-height: 26.4px;
 }
 h2 {
-  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
   font-size: 24px;
   font-style: normal;
   font-variant: normal;
@@ -42,7 +44,7 @@ h2 {
   line-height: 20px;
 }
 h4 {
-  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
   font-size: 24px;
   font-style: normal;
   font-variant: normal;
@@ -50,27 +52,41 @@ h4 {
   line-height: 15.4px;
 }
 p {
-  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-variant: normal;
   font-weight: 300;
   line-height: 20px;
 }
+p.email {
+  font-family: "Andale Mono", AndaleMono, monospace;
+  font-size: 14px;
+}
+p.date {
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+  float: right;
+  font-size: 14px;
+}
+p.copr {
+  float: right;
+}
+
 .verticalLine {
   border-top : 2px solid;
   margin-right:10px;
 }
-
 </style>
+
 </head>
+
 <body>
 <div class = "flex">
   <div class="flex-container">
     <div class="flex-item">
     	<div class="flex-container-vert">
     		<div class="flex-item">
-    			<img src="Elena_profile.jpg" alt ="An image of me" style="float:left;width:250px;height:250px;">
+    			<img src="Elena_profile.jpg" alt ="An image of me" style="float:left;width:230px;height:230;">
     		</div>
     		<div class="flex-item">
     			<h2 >Contact Information</h2>
@@ -79,14 +95,16 @@ p {
                Office 342<br/>
                Campus de Montegancedo s/n<br/>
                28223 - Pozuelo de Alarcón<br/>
-               Madrid, Spain<br/>
-               elena.gutierrez@imdea.org</p>
+               Madrid, Spain<br/><br/>
+               +34 91 101 2202 ext 4139</p>
+            <p class="email" >elena.gutierrez@imdea.org</p>
           </div>     
     		</div>
     	</div>
     </div>
 
     <div class="flex-item-body">
+      <p class="date">Last update: January, 2017</p>
       <h1>Elena Gutiérrez</h1>
       <h4>PhD. student</h4>
 
@@ -109,6 +127,7 @@ p {
         <p>&#9642; <i>ELP</i>. A linearisation procedure for index-bounded sets of Horn clauses.[<a href="https://github.com/elenagutiv/Linearisation-2015">Github Project Page</a>]</p>
       </div>
       <div class="verticalLine"></div>
+      <p class="copr"> Copyright © 2017 Elena Gutiérrez</p>
     </div>
     
   </div>
