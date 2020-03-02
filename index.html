@@ -29,13 +29,21 @@
 }
 h1 {
   font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
-  font-size: 30px;
+  font-size: 40px;
   font-style: normal;
   font-variant: normal;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 26.4px;
 }
 h2 {
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+h3 {
   font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -64,6 +72,19 @@ p.date {
   float: right;
   font-size: 14px;
 }
+p.date-internship {
+  font-family:Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  float: right;
+  font-size: 18px;
+}
+.verticalLine {
+  border-top : 2px solid;
+  margin-right:10px;
+}
+.profile-image {
+  border-radius: 50%;
+}
+
 .verticalLine {
   border-top : 2px solid;
   margin-right:10px;
@@ -81,7 +102,7 @@ p.date {
     <div class="flex-item">
     	<div class="flex-container-vert">
     		<div class="flex-item">
-    			<img class="profile-image" src="Elena_profile_sized3.jpg" alt ="An image of me" style="float:left;width:250px;height:250;">
+    			<img class="profile-image" src="Elena_profile_sized3.jpg" alt ="An image of me" style="float:left;width:220px;height:220;">
     		</div>
     		<div class="flex-item">
     			<h2 >Contact Information</h2>
@@ -100,41 +121,51 @@ p.date {
     </div>
 
     <div class="flex-item-body">
-      <p class="date">Last update: July, 2019</p>
+      <p class="date">Last update: March, 2020</p>
       <h1>Elena Gutiérrez</h1>
       <h4>PhD. student</h4>
 
       
       <h2>About me</h2>
       <div class="verticalLine">
-        <p> I am a PhD. student at the IMDEA Software Institute under the supervision of <a href="http://software.imdea.org/~pierreganty/index.html">Pierre Ganty</a>.</p>
-        <p> I have studied a Double Degree on Mathematics and Computer Science at the UAM University from 2011 to 2016.
-        <p> You can find further information about me in my <a href="CV280719.pdf">CV</a>.</p>
+        <p> I am a 4th-year PhD. student at the <a href="https://software.imdea.org/index.html">IMDEA Software Institute</a> under the supervision of <a href="http://software.imdea.org/~pierreganty/index.html">Pierre Ganty</a>, expecting to graduate before October 2020.</p>
+        <p> Before joining IMDEA, I studied a Double Degree in Mathematics and Computer Science at <a href="http://www.uam.es/UAM/Home.htm?language=en">Universidad Autónoma de Madrid</a>.
+        <p> You can find further information about me in my <a href="CV202003.pdf">CV</a>.</p>
       </div>
 
-      <h2>Research</h2>
+      <h2>Research Interests</h2>
+       <div class="verticalLine">
+         <p>&#9642; Finite and weighted automata, and their application to software verification and ML
+         </p>
+          <p>&#9642; Weighted context-free grammars </p>
+          <p>&#9642; Optimization algorithms for finite automata: minimization, residualization </p>
+          <p>&#9642; Learning automata</p>
+          <p>&#9642; Parikh abstraction of formal languages</p>
+      </div>
+      <h2>Internships</h2>
       <div class="verticalLine">
+        <p class="date-internship">May - November 2019</p>
+         <h3>National Institute of Informatics (Tokyo)</h3>
+         <p> Under the supervision of Ichiro Hasuo</p>
 
-        <h4>PhD. Research</h4>
-          <p>My research is focused on applications of Automata Theory and Formal Languages Theory in the field of Program Verification.</p>
-        <h4>Internships</h4>
-          <p>&#9642; From 2013 to 2016 I was an intern student at IMDEA Software Institute.
-          As a result of my work, I presented my final degree project under the title 'Linearisation of k-index bounded sets of Horn clauses'. This project includes the implementation of a procedure in Prolog that transforms a set of non-linear Horn clauses into linear preserving the models. The procedure is available in a public repository in Github.</p>
-          <p>&#9642; I am currently doing an internship at the National Institute of Informatics (NII) in Tokyo working with Prof. Ichiro Hasuo.</p>
-      </div>
+         <p class="date-internship">2013 - 2016</p>
+         <h3>IMDEA Software Institute (Madrid)</h3>
+          <p> Under the supervision of Pierre Ganty.</p>
+    </div>
 
       <h2>Publications</h2>
       <div class="verticalLine">
-          <p>&#9642; P. Ganty, E. Gutiérrez and P. Valero. <i>A Congruence-based Perspective on Automata Minimization Algorithms</i>. In MFCS 2019. [<a href="https://arxiv.org/pdf/1906.06194.pdf">PDF</a>]</p>
-          <p>&#9642; P. Ganty and E. Gutiérrez. <i>The Regular Property for Weighted Context-Free Grammars</i>. In FSTTCS 2018. [<a href="https://arxiv.org/pdf/1810.01351.pdf">PDF</a>]</p>
-          <p>&#9642; P. Ganty and E. Gutiérrez. <i>Parikh Image of Pushdown Automata</i>. In FCT 2017. [<a href="https://arxiv.org/pdf/1706.08315.pdf">PDF</a>]</p>
+          <p>&#9642; P. Ganty, E. Gutiérrez and P. Valero. <i>A Congruence-based Perspective on Automata Minimization Algorithms</i>. MFCS 2019. [<a href="https://arxiv.org/pdf/1906.06194.pdf">PDF</a>]</p>
+          <p>&#9642; P. Ganty and E. Gutiérrez. <i>The Regular Property for Weighted Context-Free Grammars</i>. FSTTCS 2018. [<a href="https://arxiv.org/pdf/1810.01351.pdf">PDF</a>]</p>
+          <p>&#9642; P. Ganty and E. Gutiérrez. <i>Parikh Image of Pushdown Automata</i>. FCT 2017. [<a href="https://arxiv.org/pdf/1706.08315.pdf">PDF</a>]</p>
           
       </div>
       <h2>Software</h2>
       <div class="verticalLine">
+          <p>&#9642; <i>GA for WFAs</i>. A genetic-algorithm-based metaheuristic for approximating the solution of the weight maximization problem on weighted automata  over the rationals.[Publicly available soon!]</p>
           <p>&#9642; <i>ELP</i>. A linearisation procedure for index-bounded sets of Horn clauses.[<a href="https://github.com/elenagutiv/Linearisation-2015">Github Project Page</a>]</p>
       </div>
-      <h2>Thesis</h2>
+      <h2>Bachelor's Thesis</h2>
       <div class="verticalLine">
           <p>&#9642; E. Gutiérrez. <i>Linearisation of k-index bounded sets of Horn clauses</i>. Double Degree on Mathematics and Computer Science thesis, Universidad Autónoma de Madrid, May 2016. [<a href="tfg_ElenaGutierrezViedma.pdf">PDF</a>]</p>
       </div>
