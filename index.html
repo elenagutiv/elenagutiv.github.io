@@ -15,18 +15,50 @@
     flex-direction: column;
     background-color: ;
 }
+.flex-container-hor {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    background-color: ;
+}
 
 .flex-item {
   margin:10px;
   margin-right:40px;
   width: 250px;
   background-color: ;
+
 }
 .flex-item-body {
   margin:10px;
   margin-right:80px;
   background-color: ;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+
 }
+.flex-item-body-right {
+  margin:10px;
+  margin-right:80px;
+  width: 470px;
+  background-color: ;
+  text-align: right!important;
+}
+.flex-item-body-bullet-small {
+  margin:5px;
+  margin-right:10px;
+  width: 290px;
+  background-color: ;
+}
+.flex-item-body-bullet-large {
+  margin:5px;
+  margin-right:10px;
+  width: 360px;
+  background-color: ;
+}
+
+
 h1 {
   font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
   font-size: 40px;
@@ -43,6 +75,7 @@ h2 {
   font-weight: 600;
   line-height: 20px;
 }
+
 h3 {
   font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
   font-size: 20px;
@@ -51,6 +84,7 @@ h3 {
   font-weight: 600;
   line-height: 20px;
 }
+  
 h4 {
   font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
   font-size: 20px;
@@ -66,16 +100,21 @@ p {
   font-variant: normal;
   font-weight: 300;
   line-height: 20px;
+
 }
 p.date {
   font-family: Monaco, Consolas, "Lucida Console", monospace;
   float: right;
   font-size: 14px;
 }
-p.date-internship {
-  font-family:Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
-  float: right;
+ul{
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
   font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+  line-height: 20px;
+  margin-block-end: 0em;
 }
 .verticalLine {
   border-top : 2px solid;
@@ -135,23 +174,57 @@ p.date-internship {
 
       <h2>Research Interests</h2>
        <div class="verticalLine">
-         <p>&#9642; Finite and weighted automata, and their applications to software verification and ML
-         </p>
-          <p>&#9642; Weighted context-free grammars </p>
-          <p>&#9642; Optimization algorithms for finite automata: minimization, residualization </p>
-          <p>&#9642; Learning automata</p>
-          <p>&#9642; Parikh abstraction of formal languages</p>
-      </div>
+          <div class="flex-container-hor">
+            <div class="flex-item-body-bullet-large">
+              <ul>
+                <li> Finite and weighted automata, and their applications to software verification and ML</li>
+              </ul>
+            </div>
+             <div class="flex-item-body-bullet-small">
+              <ul>
+                <li> Weighted context-free grammars </li>
+              </ul>
+            </div>
+            <div class="flex-item-body-bullet-small">
+              <ul>
+                <li> Learning automata</li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex-container-hor">
+            <div class="flex-item-body-bullet-large">
+              <ul>
+                <li> Optimization algorithms for finite automata: minimization, residualization </li>
+              </ul>
+            </div>
+            <div class="flex-item-body-bullet-large">
+              <ul>
+                <li> Parikh abstraction of formal languages</li>
+              </ul>
+            </div>
+          </div>
+          
+    </div>
       <h2>Internships</h2>
       <div class="verticalLine">
-        <p class="date-internship">May 2019 - Nov 2019</p>
-         <h3>National Institute of Informatics (Tokyo)</h3>
-         <p> Under the supervision of Ichiro Hasuo</p>
-
-         <p class="date-internship">2013 - 2016</p>
-         <h3>IMDEA Software Institute (Madrid)</h3>
-          <p> Under the supervision of Pierre Ganty.</p>
-    </div>
+         <div class="flex-container-hor">
+          <div class="flex-item-body">
+           <h3>National Institute of Informatics (Tokyo)</h3>
+           <p> Under the supervision of Ichiro Hasuo</p>
+          </div>
+          <div class="flex-item-body-right">
+           <p>May 2019 - Nov 2019</p>
+          </div>
+        </div>
+        <div class="flex-container-hor">
+        <div class="flex-item-body">
+         <h3>Imdea Software Institute (Madrid)</h3>
+         <p> Under the supervision of Pierre Ganty</p>
+        </div>
+        <div class="flex-item-body-right">
+         <p>2013 - 2016</p>
+        </div>
+       </div>
 
       <h2>Publications</h2>
       <div class="verticalLine">
