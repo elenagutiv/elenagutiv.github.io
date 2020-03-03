@@ -1,26 +1,23 @@
 <!DOCTYPE html>
-<html <html lang="en">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <style>
 .flex-container {
     display: -webkit-flex;
     display: flex;
-    background-color: ;
 }
 .flex-container-vert {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: column;
     flex-direction: column;
-    background-color: ;
 }
 .flex-container-hor {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: row;
     flex-direction: row;
-    background-color: ;
 }
 
 .flex-item {
@@ -41,26 +38,25 @@
 .flex-item-body-right {
   margin:10px;
   margin-right:80px;
-  width: 470px;
+ 
   background-color: ;
   text-align: right!important;
 }
 .flex-item-body-bullet-small {
   margin:5px;
   margin-right:10px;
-  width: 290px;
+ 
   background-color: ;
 }
 .flex-item-body-bullet-large {
   margin:5px;
   margin-right:10px;
-  width: 360px;
   background-color: ;
 }
 
 
 h1 {
-  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  font-family: Georgia, serif;
   font-size: 40px;
   font-style: normal;
   font-variant: normal;
@@ -68,7 +64,7 @@ h1 {
   line-height: 26.4px;
 }
 h2 {
-  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  font-family: Georgia, serif;
   font-size: 25px;
   font-style: normal;
   font-variant: normal;
@@ -77,7 +73,7 @@ h2 {
 }
 
 h3 {
-  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  font-family: Georgia, serif;
   font-size: 20px;
   font-style: normal;
   font-variant: normal;
@@ -86,7 +82,7 @@ h3 {
 }
   
 h4 {
-  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  font-family: Georgia, serif;
   font-size: 20px;
   font-style: normal;
   font-variant: normal;
@@ -94,7 +90,7 @@ h4 {
   line-height: 15.4px;
 }
 p {
-  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  font-family: Georgia, serif;
   font-size: 18px;
   font-style: normal;
   font-variant: normal;
@@ -108,15 +104,23 @@ p.date {
   font-size: 14px;
 }
 ul{
-  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  font-family: Georgia, serif;
   font-size: 18px;
   font-style: normal;
   font-variant: normal;
   font-weight: 300;
   line-height: 20px;
-  margin-block-end: 0em;
+  padding: 1px;  
+  padding-left: 40px;
 }
-.verticalLine {
+li {
+  margin-bottom: 20px;
+}
+
+li:last-child {
+ margin-bottom: 0px;
+}
+.horizontalLine {
   border-top : 2px solid;
   margin-right:10px;
 }
@@ -125,8 +129,9 @@ ul{
 }
 
 .verticalLine {
-  border-top : 2px solid;
-  margin-right:10px;
+  border-left: 4px solid black;
+  height: 1500px;
+  margin-right: 20px;
 }
 .profile-image {
   border-radius: 50%;
@@ -140,109 +145,87 @@ ul{
   <div class="flex-container">
     <div class="flex-item">
     	<div class="flex-container-vert">
+        <div class="flex-item">
+          <img class="profile-image" src="Elena_profile_sized4.jpg" alt ="An image of me" style="float:left;width:180px;height:180;">
+        </div>
+    		
     		<div class="flex-item">
-    			<img class="profile-image" src="Elena_profile_sized4.jpg" alt ="An image of me" style="float:left;width:220px;height:220;">
-    		</div>
-    		<div class="flex-item">
-    			<h2 >Contact Information</h2>
-          <div class="verticalLine">
+    			<h2 >Contact</h2>
             <p>IMDEA Software Institute<br/>
                Office 342<br/>
                Campus de Montegancedo s/n<br/>
                28223 - Pozuelo de Alarcón<br/>
                Madrid, Spain<br/><br/>
                +34 91 101 2202 ext 4139<br/><br/>
-               <img  src="elena.gutierrez.email.png" height="20" width="170"></p>
+               <img  src="elena.gutierrez.email.png" height="20" width="120"></p>
             
-          </div>     
     		</div>
     	</div>
     </div>
+    <div class=verticalLine></div>
+    <div class="flex-container-vert">
+      <div class="flex-item">
+            <img src="landscape3.jpeg" alt ="sokokuraByHiroshige" style="float:center;width:900px;height:10;">
+      </div>
+      <div class="flex-item-body">
+        <p class="date">Last update: March, 2020</p>
+        <h1>Elena Gutiérrez</h1>
+        <h4>PhD. student @ IMDEA Software Institute (Madrid)</h4>
 
-    <div class="flex-item-body">
-      <!-- <p class="date">Last update: March, 2020</p> -->
-      <h1>Elena Gutiérrez</h1>
-      <h4>PhD. student</h4>
 
       
       <h2>About me</h2>
-      <div class="verticalLine">
+      <div class="horizontalLine">
         <p> I am a 4th-year PhD. student at the <a href="https://software.imdea.org/index.html">IMDEA Software Institute</a> under the supervision of <a href="http://software.imdea.org/~pierreganty/index.html">Pierre Ganty</a>, expecting to graduate before October 2020.</p>
         <p> Before joining IMDEA, I studied a Double Degree in Mathematics and Computer Science at <a href="http://www.uam.es/UAM/Home.htm?language=en">Universidad Autónoma de Madrid</a>.
         <p> You can find further information about me in my <a href="CV202003.pdf">CV</a>.</p>
       </div>
 
-      <h2>Research Interests</h2>
-       <div class="verticalLine">
-          <div class="flex-container-hor">
-            <div class="flex-item-body-bullet-large">
-              <ul>
-                <li> Finite and weighted automata, and their applications to software verification and ML</li>
-              </ul>
-            </div>
-             <div class="flex-item-body-bullet-small">
-              <ul>
-                <li> Weighted context-free grammars </li>
-              </ul>
-            </div>
-            <div class="flex-item-body-bullet-small">
-              <ul>
-                <li> Learning automata</li>
-              </ul>
-            </div>
-          </div>
-          <div class="flex-container-hor">
-            <div class="flex-item-body-bullet-large">
-              <ul>
-                <li> Optimization algorithms for finite automata: minimization, residualization </li>
-              </ul>
-            </div>
-            <div class="flex-item-body-bullet-small">
-              <ul>
-                <li> Parikh abstraction of formal languages</li>
-              </ul>
-            </div>
-          </div>
-          
-    </div>
-      <h2>Internships</h2>
-      <div class="verticalLine">
-         <div class="flex-container-hor">
-          <div class="flex-item-body">
-           <h3>National Institute of Informatics (Tokyo)</h3>
-           <p> Under the supervision of Ichiro Hasuo</p>
-          </div>
-          <div class="flex-item-body-right">
-           <p>May 2019 - Nov 2019</p>
-          </div>
-        </div>
+      <h2>Some of my research interests</h2>
+       <div class="horizontalLine">
         <div class="flex-container-hor">
-        <div class="flex-item-body">
-         <h3>Imdea Software Institute (Madrid)</h3>
-         <p> Under the supervision of Pierre Ganty</p>
+          <ul>
+            <li>Weighted automata and weighted context-free grammars and their applications to software verification and ML</li>
+            <li>Parikh abstraction of languages</li>
+          </ul>
+          <ul>
+             <li>Finite-state automata and optimization algorithms: minimization, residualization</li>
+            <li>Learning automata</li>
+          </ul>
         </div>
-        <div class="flex-item-body-right">
-         <p>2013 - 2016</p>
-        </div>
-       </div>
+      </div>
+          
+    
+      <h2>Internships</h2>
+      <div class="horizontalLine">
+           <ul >
+             <li><b>National Institute of Informatics (Tokyo)</b>. Under the supervision of Ichiro Hasuo. From May 2019 to Nov 2019.</li>
+             <li><b>IMDEA Software Institute (Madrid)</b>. Under the supervision of Pierre Ganty. Summers of 2013, 2014 and 2015.</li>
+            </ul>
+      </div>
 
       <h2>Publications</h2>
-      <div class="verticalLine">
-          <p>&#9642; P. Ganty, E. Gutiérrez and P. Valero. <i>A Congruence-based Perspective on Automata Minimization Algorithms</i>. MFCS 2019. [<a href="https://arxiv.org/pdf/1906.06194.pdf">PDF</a>]</p>
-          <p>&#9642; P. Ganty and E. Gutiérrez. <i>The Regular Property for Weighted Context-Free Grammars</i>. FSTTCS 2018. [<a href="https://arxiv.org/pdf/1810.01351.pdf">PDF</a>]</p>
-          <p>&#9642; P. Ganty and E. Gutiérrez. <i>Parikh Image of Pushdown Automata</i>. FCT 2017. [<a href="https://arxiv.org/pdf/1706.08315.pdf">PDF</a>]</p>
+      <div class="horizontalLine">
+        <ul>
+          <li>P. Ganty, E. Gutiérrez and P. Valero. <b>A Congruence-based Perspective on Automata Minimization Algorithms</b>. MFCS 2019. [<a href="https://arxiv.org/pdf/1906.06194.pdf">PDF</a>]</li>
+          <li> P. Ganty and E. Gutiérrez. <b>The Regular Property for Weighted Context-Free Grammars</b>. FSTTCS 2018. [<a href="https://arxiv.org/pdf/1810.01351.pdf">PDF</a>]</li>
+          <li> P. Ganty and E. Gutiérrez. <b>Parikh Image of Pushdown Automata</b>. FCT 2017. [<a href="https://arxiv.org/pdf/1706.08315.pdf">PDF</a>]</li>
+        </ul>
           
       </div>
       <h2>Software</h2>
-      <div class="verticalLine">
-          <p>&#9642; <i>GA for WFAs</i>. A genetic-algorithm-based metaheuristic for approximating the solution of the weight maximization problem on weighted automata  over the rationals.[Publicly available soon!]</p>
-          <p>&#9642; <i>ELP</i>. A linearisation procedure for index-bounded sets of Horn clauses.[<a href="https://github.com/elenagutiv/Linearisation-2015">Github Project Page</a>]</p>
+      <div class="horizontalLine">
+        <ul>
+          <li><b>GA for WFAs</b>. A genetic-algorithm-based metaheuristic for approximating the solution of the weight maximization problem on weighted automata  over the rationals.[Publicly available soon!]</li>
+          <li><b>ELP</b>. A linearisation procedure for index-bounded sets of Horn clauses.[<a href="https://github.com/elenagutiv/Linearisation-2015">Github Project Page</a>]</li>
       </div>
-      <h2>Bachelor's Thesis</h2>
-      <div class="verticalLine">
-          <p>&#9642; E. Gutiérrez. <i>Linearisation of k-index bounded sets of Horn clauses</i>. Double Degree on Mathematics and Computer Science thesis, Universidad Autónoma de Madrid, May 2016. [<a href="tfg_ElenaGutierrezViedma.pdf">PDF</a>]</p>
+      <h2>Bachelor's thesis</h2>
+      <div class="horizontalLine">
+        <ul>
+          <li><b>Linearisation of k-index bounded sets of Horn clauses</b>. Double Degree on Mathematics and Computer Science thesis, Universidad Autónoma de Madrid, May 2016. [<a href="tfg_ElenaGutierrezViedma.pdf">PDF</a>]</li>
+        <ul>
       </div>
-      <div class="verticalLine"></div>
+      <div class="horizontalLine"></div>
       <p> Copyright © 2017 Elena Gutiérrez</p>
       </div>
     </div>
@@ -250,6 +233,6 @@ ul{
     
   </div>
 </div>
-
+</div>
 </body>
 </html>
