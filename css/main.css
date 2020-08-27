@@ -1,5 +1,6 @@
 body {
   background: #d1e0e0;
+
 }
 /*--- navigation bar ---*/
 .navbar {
@@ -51,6 +52,13 @@ body {
   font-size: 14px;
 }
 .mytext-date{
-  color: #808080
-;
+  color: #808080;
+}
+.contact{
+  font-size: 14px;
+}
+.last-update{
+  font-family: Monaco;
+  font-size:13px;
+  text-align:right;
 }
