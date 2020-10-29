@@ -26,9 +26,9 @@ body {
 .header {
   background-image: url('../images/FotoCarnet-Reducida.jpeg');
   background-size: cover;
-  background-position: 55% 20%; /*55% 50%*/
+  background-position: 55% 30%; /*55% 50%*/
   position: fixed;
-  max-width: 40%;
+  max-width: 35.5%;
 }
 .subheading{
   font-size: 15px;
